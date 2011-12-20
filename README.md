@@ -11,7 +11,9 @@ Requirements
 ------------
 
 PHP - PECL OAuth extension http://pecl.php.net/package/oauth
+
 Python - python-oauth2 https://github.com/synedra/python-oauth2
+
 Java - Scribe https://github.com/fernandezpablo85/scribe-java
 
 License
