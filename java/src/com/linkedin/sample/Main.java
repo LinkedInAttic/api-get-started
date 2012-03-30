@@ -32,6 +32,7 @@ import org.scribe.oauth.OAuthService;
 
 import java.io.*;
 import java.util.HashMap;
+import java.util.Map;
 
 
 public class Main {
@@ -186,7 +187,7 @@ public class Main {
         request.addQuerystringParameter("title", "Développeur");
         request.addQuerystringParameter("facet", "industry,4");
         request.addQuerystringParameter("facets", "location,industry");
-        System.out.println(request.getCompleteUrl());
+        System.out.println(request.getUrl());
         service.signRequest(accessToken, request);
         response = request.send();
         System.out.println(response.getBody());
@@ -248,7 +249,11 @@ public class Main {
          **************************/
 
 
-
+/*
+ * Commented out so we don't write into your LinkedIn/Twitter feed while you are just testing out
+ * some code. Uncomment if you'd like to see writes in action.
+ * 
+ * 
         System.out.println("********Write to the  share - using XML********");
         //This basic shares some basic information on the users activity stream
         //https://developer.linkedin.com/documents/share-api
@@ -309,7 +314,7 @@ public class Main {
         request.addHeader("Content-Type", "application/json");
         request.addHeader("x-li-format", "json");
         //make the json payload using json-simple
-        HashMap jsonMap = new HashMap();
+        Map<String, Object> jsonMap = new HashMap<String, Object>();
         jsonMap.put("comment", "Posting from the API using JSON");
         JSONObject contentObject = new JSONObject();
         contentObject.put("title", "This is a another test post");
@@ -326,7 +331,7 @@ public class Main {
         System.out.println(response.getBody());
         System.out.println(response.getHeaders().toString());
         System.out.println();System.out.println();
-
+*/
 
         /**************************
          *
