@@ -183,10 +183,7 @@ $body_json = json_encode($body);
 
 print_line("\n********Write to the share - using JSON********");
 $api_url = "http://api.linkedin.com/v1/people/~/shares";
-$oauth->fetch($api_url, $body_json, OAUTH_HTTP_METHOD_POST, array(
-																"Content-Type" => "application/json",
-																"x-li-format" => "json"
-															  ));
+$oauth->fetch($api_url, $body_json, OAUTH_HTTP_METHOD_POST, array("Content-Type" => "application/json",	"x-li-format" => "json"));
 print_response($oauth);
 
 // Note that the same query param used to post to twitter for XML also applies to JSON
