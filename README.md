@@ -3,7 +3,7 @@ LinkedIn REST API Getting Started Tutorial
 
 The code contained here is part of our new getting started tutorial which can be found on our developer site at the following location:
 
-https://developer.linkedin.com/documents/quick-start-guide
+https://developer.linkedin.com/docs/rest-api
 
 Currently we provide support for Java, PHP, and Python with additional languages being added to the tutorial in the future.
 
